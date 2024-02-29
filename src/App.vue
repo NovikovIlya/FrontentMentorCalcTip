@@ -6,7 +6,7 @@ import logo from './assets/logo.svg'
 
 const num = ref(0);
 const people = ref(0);
-const n = ref(1);
+const n = ref<any>(1);
 
 const click = (x:any) => {
   n.value = x;

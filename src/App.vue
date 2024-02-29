@@ -25,8 +25,8 @@ const sumTipChange = computed(() => {
 });
 
 const promptModal = () => {
-  let proc : any = prompt('Какой процент нужен?', 100);
-  n.value = proc / 100 + 1;
+  let proc :  string | null = prompt('Какой процент нужен?', 100);
+  if (proc !== null) {n.value = proc / 100 + 1}else {n.value = 1}
 };
 
 const reset = () => {

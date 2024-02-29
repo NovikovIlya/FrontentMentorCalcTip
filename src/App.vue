@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue';
+import { ref, computed } from 'vue';
 import dollar from './assets/icon-dollar.svg'
 import person from './assets/icon-person.svg'
 import logo from './assets/logo.svg'
 
 const num = ref(0);
-const numWithTip = ref(1);
 const people = ref(0);
-const sumTip = ref(1);
 const n = ref(1);
 
-const click = (x) => {
+const click = (x:any) => {
   n.value = x;
 };
 
@@ -27,9 +25,10 @@ const sumTipChange = computed(() => {
 });
 
 const promptModal = () => {
-  let proc = prompt('Какой процент нужен', 100);
+  let proc : any = prompt('Какой процент нужен?', 100);
   n.value = proc / 100 + 1;
 };
+
 const reset = () => {
   n.value = 0;
   people.value = 0;

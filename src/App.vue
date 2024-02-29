@@ -31,8 +31,8 @@ const promptModal = () => {
   n.value = proc / 100 + 1;
 };
 const reset = () => {
-  n.value = 1;
-  people.value = 1;
+  n.value = 0;
+  people.value = 0;
   num.value = 0
 };
 </script>
@@ -93,8 +93,11 @@ const reset = () => {
 </template>
 
 <style scoped>
+@import './style.css';
+
 
 .container {
+  font-family:'Space Mono',monospace;
   background-color: white;
   border-radius: 2%;
   padding:10px;
@@ -126,6 +129,7 @@ const reset = () => {
   background-color:#e4e9ed;
   text-align:end;
   padding-right:15px;
+  font-family:'Space Mono',monospace;
 }
 .tab{
   display:grid;
@@ -142,7 +146,6 @@ const reset = () => {
   width:90%;
   position: absolute;
   bottom:10px;
-  
 }
 
 .btnZ{
@@ -154,12 +157,14 @@ const reset = () => {
   cursor:pointer;
   font-size: 18px;
   font-weight:bold;
+  font-family:'Space Mono',monospace;
 }
 .zz{
   background-color: #e4e9ed;
   color: #00474B;
   font-weight:bold;
   border:0;
+  font-family:'Space Mono',monospace;
 }
 .miniBtn{
   width:100%;
@@ -178,6 +183,7 @@ const reset = () => {
   margin-top:25px;
   margin-bottom:10px;
   margin-left:5px;
+  font-family:'Space Mono',monospace;
 }
 .dollar{
   position: absolute;
@@ -189,15 +195,18 @@ const reset = () => {
   font-size: 45px;
   color:green;
  font-weight:bold;
+ font-family:'Space Mono',monospace;
 }
 .s{
   font-size:18px;
   word-spacing:4px;
   font-weight:bold;
+  font-family:'Space Mono',monospace;
 
 }
 .sp{
   color:#609397;
+  font-family:'Space Mono',monospace;
 }
 .logo{
   width:100%;
